@@ -81,3 +81,11 @@ is_system_service = False
 [file_manager]
 enable_object_processing = True
 
+[update_manager client moonraker-telegram-bot]
+type = git_repo
+path = ~/moonraker-telegram-bot
+origin = https://github.com/nlef/moonraker-telegram-bot.git
+env = ~/moonraker-telegram-bot-env/bin/python
+requirements = scripts/requirements.txt
+install_script = scripts/install.sh
+
